@@ -5,22 +5,58 @@ namespace myImages {
         switch(helpers.stringTrim(name)) {
             case "image1":
             case "myImage":return img`
-. . . . . f f f f f . . . . . . 
-. . . . f f f f f f f . . . . . 
-. . . . f f f f f f f . . . . . 
-. . . . f f f f f f f . . . . . 
-. . . . f f f f f f f . . . . . 
-. . . . f f f f f f f . . . . . 
-. . . . . f f f f f . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
+1 1 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+1 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+`;
+            case "image2":
+            case "myImage0":return img`
+1 1 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+1 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+a a a a a a a a a a a a a a a a 
+`;
+            case "image3":
+            case "myImage1":return img`
+1 1 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+1 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+`;
+            case "image4":
+            case "myImage2":return img`
+1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+e e e e e e e e e e e e e e e e 
+`;
+            case "image5":
+            case "myImage3":return img`
+1 1 a a a a a a a a a a a a a a 
+1 a a a a a a a a a a a a a a c 
+a a a a a a a a a a a a a a a c 
+a a a a a a a a a a a a a a a c 
+a a a a a a a a a a a a a a a c 
+a a a a a a a a a a a a a a a c 
+a a a a a a a a a a a a a a a c 
+c c c c c c c c c c c c c c c c 
 `;
         }
         return null;
@@ -28,76 +64,7 @@ namespace myImages {
 
     helpers._registerFactory("animation", function(name: string) {
         switch(helpers.stringTrim(name)) {
-            case "myAnim":
-            case "anim1":return [img`
-..............fffcc.............
-..............fcbddcc...........
-...............fbbddcc..........
-...............fcbbccf..........
-..ccc.........ffccccccfffff.....
-..cbbcc....fffcbbbbcbbbbbbbff...
-...cbbdc.ffcccbbbbcbcbbbbbbbbf..
-...fbbdcfcccccbbbcbcbbffbbbbbbff
-....fbbffcccccbbbbbcb1ff11bbbcbf
-....fcbbcccccccbbbbb11111111bbbf
-....fcccccccccccbbbb11cc33111bf.
-...fcbbffbdbcccccbbb111c13cccf..
-...fbbf..ccddddcfbbbc111c31cf...
-..fbbf.....ccdccbbdbf111cccf....
-..fff........ccbbdcfcccc........
-..............fffff.............
-`, img`
-..............fffcc.............
-..............fbbddc............
-...............fbbddc...........
-ccc............fcbbccf..........
-cbbcc.........ffccccccffffff....
-.cbbdc.....fffcbbbbbbbbbbbbbff..
-.fbbddc..ffcccbbbbcbcbbbbbbbbbff
-..fbbdfffcccccbbbcbcbbffbbbbbcbf
-..fcbbbcccccccbbbcbcb1ff1111bbbf
-..fccbcccccccccbbbbbb11111111bf.
-.fcbbfffccccccccbbbb11cc33cccf..
-.fbbf...cbdbcccccbbb111c131cf...
-fbbf.....ccdddddfbbbc111c33f....
-fff........ccddfbbdbf1111ff.....
-.............cfbbdbfccccc.......
-..............fffff.............
-`, img`
-..............fffc..............
-..............fbddcc............
-..ccc.........ffbddbc...........
-..cbbc.........fcbbccf..........
-...cbdc.......ffccccccfffffff...
-...fbdc....fffcbbbbbbbbbbbbbcff.
-....fbdc.ffcccbbbbbbcbbbbbbbbbcf
-....fcdffcccccbbbcbcbbbffbbbbcbf
-....fcbbccccccbbbcbcbbbff1111bbf
-...fcbbccccccccbbbcbb11111111bf.
-...fbbfffcccccccbbbb11bc33cccf..
-..fbbf..cbdbcccccbbb111c131cf...
-..fff....cbdddddccbbc111c33f....
-..........ccbddccbbdf1111ff.....
-............ccfbbbdfccccc.......
-..............fffff.............
-`, img`
-..............fffcc.............
-..............fbbddc............
-...............fbbddc...........
-ccc............fcbbccf..........
-cbbcc.........ffccccccffffff....
-.cbbdc.....fffcbbbbbbbbbbbbbff..
-.fbbddc..ffcccbbbbcbcbbbbbbbbbff
-..fbbdfffcccccbbbcbcbbffbbbbbcbf
-..fcbbbcccccccbbbcbcb1ff1111bbbf
-..fccbcccccccccbbbbbb11111111bf.
-.fcbbfffccccccccbbbb11cc33cccf..
-.fbbf...cbdbcccccbbb111c131cf...
-fbbf.....ccdddddfbbbc111c33f....
-fff........ccddfbbdbf1111ff.....
-.............cfbbdbfccccc.......
-..............fffff.............
-`];
+
         }
         return null;
     })
