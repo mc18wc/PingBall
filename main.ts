@@ -49,21 +49,22 @@ sprites.onOverlap(SpriteKind.ball, SpriteKind.block, function (sprite, otherSpri
     otherSprite.startEffect(effects.disintegrate)
     music.bigCrash.play()
     otherSprite.destroy()
-    pause(100)
-    blockNum += -1
-})
-sprites.onOverlap(SpriteKind.Player, SpriteKind.ball, function (sprite, otherSprite) {
-    if (ballcopy.x >= mySprite.x - 8 || ballcopy.x <= mySprite.x + 8) {
-        ballcopy.vy = 0 - ballcopy.vy
-    } else {
-        ballcopy.x = 0 - ballcopy.x
-    }
-    ballcopy.startEffect(effects.fountain, 100)
-    music.knock.play()
     scene.cameraShake(2, 100)
     scene.setBackgroundColor(8)
     pause(30)
     scene.setBackgroundColor(15)
+    pause(100)
+    blockNum += -1
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.ball, function (sprite, otherSprite) {
+    if (ballcopy.x > mySprite.x - 8 || ballcopy.x < mySprite.x + 8) {
+        ballcopy.vy = -1 * ballcopy.vy
+        ballcopy.y = mySprite.y - 3
+    } else {
+        ballcopy.vx = -1 * ballcopy.vx
+    }
+    ballcopy.startEffect(effects.fountain, 100)
+    music.knock.play()
 })
 let block_y = 0
 let block_x = 0
@@ -99,7 +100,7 @@ forever(function () {
     if (blockNum == 0) {
         game.over(true)
     }
-    if (ballcopy.y >= 119) {
+    if (ballcopy.y >= 118) {
         game.over(false)
     }
 })
