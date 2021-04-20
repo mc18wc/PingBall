@@ -102,7 +102,6 @@ forever(function () {
     }
     if (ballcopy.y >= 118) {
         game.over(false)
-        music.stopAllSounds()
     }
 })
 forever(function () {
