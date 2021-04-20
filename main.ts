@@ -102,5 +102,28 @@ forever(function () {
     }
     if (ballcopy.y >= 118) {
         game.over(false)
+        music.stopAllSounds()
+    }
+})
+forever(function () {
+    if (开始 == 1) {
+        for (let index = 0; index < 3; index++) {
+            music.playMelody("- - - F - - - C ", 500)
+            music.playMelody("- - - F - - - C ", 500)
+            music.playMelody("- - - F - - - C ", 500)
+            music.playMelody("- - - F - - - C ", 500)
+            music.playMelody("- - - E - - - C ", 500)
+            music.playMelody("- - - E - - - C ", 500)
+            music.playMelody("- - - E - - - C ", 500)
+            music.playMelody("- - - E - - - C ", 500)
+        }
+        music.playMelody("- - - F - D - C ", 500)
+        music.playMelody("- - - F - - - C ", 500)
+        music.playMelody("- - - F - - D C ", 500)
+        music.playMelody("- - - F - D E C ", 500)
+        music.playMelody("- - - E - - - C ", 500)
+        music.playMelody("- - - E - - F C ", 500)
+        music.playMelody("- - - E - - - C ", 500)
+        music.playMelody("- - - E - D E C ", 500)
     }
 })
