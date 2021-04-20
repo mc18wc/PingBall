@@ -21,6 +21,7 @@ function hit (sprite: Sprite, otherSprite: Sprite) {
     }
 }
 function 关卡 () {
+    blockNum = 0
     blocks = [assets.image`myImage3`, assets.image`myImage2`, assets.image`myImage0`, assets.image`myImage`, assets.image`myImage1`]
     block_x = 24
     block_y = 16
@@ -28,6 +29,7 @@ function 关卡 () {
         for (let index = 0; index <= 5; index++) {
             sprites.create(blocks[Math.constrain(index, 0, 4)], SpriteKind.block).setPosition(block_x, block_y)
             block_y += 8
+            blockNum += 1
         }
         block_y = 16
         block_x += 16
@@ -47,21 +49,26 @@ sprites.onOverlap(SpriteKind.ball, SpriteKind.block, function (sprite, otherSpri
     otherSprite.startEffect(effects.disintegrate)
     music.bigCrash.play()
     otherSprite.destroy()
+    pause(100)
+    blockNum += -1
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.ball, function (sprite, otherSprite) {
     if (ballcopy.x >= mySprite.x - 8 || ballcopy.x <= mySprite.x + 8) {
         ballcopy.vy = 0 - ballcopy.vy
-        ballcopy.startEffect(effects.fountain, 100)
-        music.knock.play()
-        scene.cameraShake(2, 100)
-        scene.setBackgroundColor(8)
-        pause(30)
-        scene.setBackgroundColor(15)
+    } else {
+        ballcopy.x = 0 - ballcopy.x
     }
+    ballcopy.startEffect(effects.fountain, 100)
+    music.knock.play()
+    scene.cameraShake(2, 100)
+    scene.setBackgroundColor(8)
+    pause(30)
+    scene.setBackgroundColor(15)
 })
 let block_y = 0
 let block_x = 0
 let blocks: Image[] = []
+let blockNum = 0
 let sidehit = 0
 let 开始 = 0
 let ballcopy: Sprite = null
@@ -88,3 +95,11 @@ controller.moveSprite(mySprite, 100, 0)
 controller.moveSprite(ballcopy, 100, 0)
 关卡()
 开始 = 0
+forever(function () {
+    if (blockNum == 0) {
+        game.over(true)
+    }
+    if (ballcopy.y >= 119) {
+        game.over(false)
+    }
+})
