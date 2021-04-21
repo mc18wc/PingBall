@@ -26,8 +26,8 @@ function 关卡 () {
     block_x = 24
     block_y = 16
     for (let index = 0; index <= 7; index++) {
-        for (let index = 0; index <= 5; index++) {
-            sprites.create(blocks[Math.constrain(index, 0, 4)], SpriteKind.block).setPosition(block_x, block_y)
+        for (let index2 = 0; index2 <= 5; index2++) {
+            sprites.create(blocks[Math.constrain(index2, 0, 4)], SpriteKind.block).setPosition(block_x, block_y)
             block_y += 8
             blockNum += 1
         }
@@ -74,6 +74,44 @@ let sidehit = 0
 let 开始 = 0
 let ballcopy: Sprite = null
 let mySprite: Sprite = null
+scene.setBackgroundImage(assets.image`myImage0`)
+game.setDialogFrame(img`
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . 
+    `)
+game.setDialogCursor(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `)
+game.setDialogTextColor(0)
+game.showLongText("press A to start", DialogLayout.Bottom)
 mySprite = sprites.create(assets.image`Temporary asset`, SpriteKind.Player)
 ballcopy = sprites.create(assets.image`Temporary asset0`, SpriteKind.ball)
 mySprite.setPosition(76, 110)
@@ -82,13 +120,13 @@ mySprite.setStayInScreen(true)
 ballcopy.setBounceOnWall(true)
 controller.moveSprite(mySprite, 100, 0)
 controller.moveSprite(ballcopy, 100, 0)
-关卡()
 开始 = 0
+关卡()
 forever(function () {
-    if (blockNum == 0) {
+    if (blockNum == 0 && 开始 == 1) {
         game.over(true)
     }
-    if (ballcopy.y >= 118) {
+    if (ballcopy.y >= 118 && 开始 == 1) {
         game.over(false)
     }
 })
