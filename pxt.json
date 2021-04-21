@@ -2,7 +2,10 @@
     "name": "scenes",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "Color Fading": "github:jwunderl/pxt-color#v0.2.1",
+        "controller": "*",
+        "animation": "*"
     },
     "files": [
         "main.blocks",
