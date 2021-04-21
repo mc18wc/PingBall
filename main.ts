@@ -22,7 +22,43 @@ function hit (sprite: Sprite, otherSprite: Sprite) {
 }
 function 关卡 () {
     blockNum = 0
-    blocks = [assets.image`myImage3`, assets.image`myImage2`, assets.image`myImage0`, assets.image`myImage`, assets.image`myImage1`]
+    blocks = [img`
+        . 3 a a a a a a a a a a a a a . 
+        3 a a a a a a a a a a a a a a c 
+        a a a a a a a a a a a a a a a c 
+        a a a a a a a a a a a a a a a c 
+        a a a a a a a a a a a a a a a c 
+        a a a a a a a a a a a a a a a c 
+        a a a a a a a a a a a a a a a c 
+        . c c c c c c c c c c c c c c . 
+        `, img`
+        . 3 2 2 2 2 2 2 2 2 2 2 2 2 2 . 
+        3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+        2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+        2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+        2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+        2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+        2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+        . e e e e e e e e e e e e e e . 
+        `, img`
+        . 1 3 3 3 3 3 3 3 3 3 3 3 3 3 . 
+        1 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+        3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+        3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+        3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+        3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+        3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+        . a a a a a a a a a a a a a a . 
+        `, assets.image`myImage`, img`
+        . 1 5 5 5 5 5 5 5 5 5 5 5 5 5 . 
+        1 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+        . 4 4 4 4 4 4 4 4 4 4 4 4 4 4 . 
+        `]
     block_x = 24
     block_y = 16
     for (let index = 0; index <= 7; index++) {

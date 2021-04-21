@@ -1,28 +1,8 @@
 {
     "image1": {
-        "data": "hwQQAAgAAAARd3dncXd3Z3d3d2d3d3dnd3d3Z3d3d2d3d3dnd3d3Z3d3d2d3d3dnd3d3Z3d3d2d3d3dnd3d3Z3d3d2dnZmZm",
+        "data": "hwQQAAgAAABQd3cHdXd3Z3d3d2d3d3dnd3d3Z3d3d2d3d3dnd3d3Z3d3d2d3d3dnd3d3Z3d3d2d3d3dnd3d3Z3d3d2dgZmYG",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage"
-    },
-    "image2": {
-        "data": "hwQQAAgAAAARMzOjMTMzozMzM6MzMzOjMzMzozMzM6MzMzOjMzMzozMzM6MzMzOjMzMzozMzM6MzMzOjMzMzozMzM6Ojqqqq",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "myImage0"
-    },
-    "image3": {
-        "data": "hwQQAAgAAAARVVVFUVVVRVVVVUVVVVVFVVVVRVVVVUVVVVVFVVVVRVVVVUVVVVVFVVVVRVVVVUVVVVVFVVVVRVVVVUVFRERE",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "myImage1"
-    },
-    "image4": {
-        "data": "hwQQAAgAAAARIiLiISIi4iIiIuIiIiLiIiIi4iIiIuIiIiLiIiIi4iIiIuIiIiLiIiIi4iIiIuIiIiLiIiIi4iIiIuLi7u7u",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "myImage2"
-    },
-    "image5": {
-        "data": "hwQQAAgAAAARqqrKoaqqyqqqqsqqqqrKqqqqyqqqqsqqqqrKqqqqyqqqqsqqqqrKqqqqyqqqqsqqqqrKqqqqyqqqqsrKzMzM",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "myImage3"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
