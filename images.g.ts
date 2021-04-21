@@ -30,6 +30,50 @@ namespace myImages {
 1 d 
 d d 
 `;
+            case "image4":
+            case "Temporary asset1":return img`
+. 3 a a a a a a a a a a a a a . 
+3 a a a a a a a a a a a a a a c 
+a a a a a a a a a a a a a a a c 
+a a a a a a a a a a a a a a a c 
+a a a a a a a a a a a a a a a c 
+a a a a a a a a a a a a a a a c 
+a a a a a a a a a a a a a a a c 
+. c c c c c c c c c c c c c c . 
+`;
+            case "image5":
+            case "Temporary asset2":return img`
+. 3 2 2 2 2 2 2 2 2 2 2 2 2 2 . 
+3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 e 
+. e e e e e e e e e e e e e e . 
+`;
+            case "image6":
+            case "Temporary asset3":return img`
+. 1 3 3 3 3 3 3 3 3 3 3 3 3 3 . 
+1 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 a 
+. a a a a a a a a a a a a a a . 
+`;
+            case "image7":
+            case "Temporary asset4":return img`
+. 1 5 5 5 5 5 5 5 5 5 5 5 5 5 . 
+1 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+. 4 4 4 4 4 4 4 4 4 4 4 4 4 4 . 
+`;
         }
         return null;
     })

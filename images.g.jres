@@ -14,6 +14,26 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Temporary asset0"
     },
+    "image4": {
+        "data": "hwQQAAgAAAAwqqoKo6qqyqqqqsqqqqrKqqqqyqqqqsqqqqrKqqqqyqqqqsqqqqrKqqqqyqqqqsqqqqrKqqqqyqqqqsrAzMwM",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Temporary asset1"
+    },
+    "image5": {
+        "data": "hwQQAAgAAAAwIiICIyIi4iIiIuIiIiLiIiIi4iIiIuIiIiLiIiIi4iIiIuIiIiLiIiIi4iIiIuIiIiLiIiIi4iIiIuLg7u4O",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Temporary asset2"
+    },
+    "image6": {
+        "data": "hwQQAAgAAAAQMzMDMTMzozMzM6MzMzOjMzMzozMzM6MzMzOjMzMzozMzM6MzMzOjMzMzozMzM6MzMzOjMzMzozMzM6OgqqoK",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Temporary asset3"
+    },
+    "image7": {
+        "data": "hwQQAAgAAAAQVVUFUVVVRVVVVUVVVVVFVVVVRVVVVUVVVVVFVVVVRVVVVUVVVVVFVVVVRVVVVUVVVVVFVVVVRVVVVUVAREQE",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Temporary asset4"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
