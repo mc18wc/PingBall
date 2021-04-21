@@ -14,6 +14,22 @@ namespace myImages {
 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
 . 6 6 6 6 6 6 6 6 6 6 6 6 6 6 . 
 `;
+            case "image2":
+            case "Temporary asset":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. 8 1 1 1 1 1 1 1 1 1 1 1 1 8 . 
+8 9 9 9 9 9 9 9 9 9 9 9 9 9 9 8 
+8 9 8 9 8 9 8 9 8 9 8 9 8 9 8 8 
+. 8 8 8 8 8 8 8 8 8 8 8 8 8 8 . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "image3":
+            case "Temporary asset0":return img`
+1 d 
+d d 
+`;
         }
         return null;
     })

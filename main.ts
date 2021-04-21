@@ -110,20 +110,8 @@ let sidehit = 0
 let 开始 = 0
 let ballcopy: Sprite = null
 let mySprite: Sprite = null
-mySprite = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . 8 1 1 1 1 1 1 1 1 1 1 1 1 8 . 
-    8 9 9 9 9 9 9 9 9 9 9 9 9 9 9 8 
-    8 9 8 9 8 9 8 9 8 9 8 9 8 9 8 8 
-    . 8 8 8 8 8 8 8 8 8 8 8 8 8 8 . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Player)
-ballcopy = sprites.create(img`
-    1 d 
-    d d 
-    `, SpriteKind.ball)
+mySprite = sprites.create(assets.image`Temporary asset`, SpriteKind.Player)
+ballcopy = sprites.create(assets.image`Temporary asset0`, SpriteKind.ball)
 mySprite.setPosition(76, 110)
 ballcopy.setPosition(mySprite.x, 107)
 mySprite.setStayInScreen(true)

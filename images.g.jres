@@ -4,6 +4,16 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage"
     },
+    "image2": {
+        "data": "hwQQAAgAAAAAgAgAAJiJAACRiAAAkYkAAJGIAACRiQAAkYgAAJGJAACRiAAAkYkAAJGIAACRiQAAkYgAAJGJAACYiAAAgAgA",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Temporary asset"
+    },
+    "image3": {
+        "data": "hwQCAAIAAADRAAAA3QAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Temporary asset0"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
