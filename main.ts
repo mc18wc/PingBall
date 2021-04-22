@@ -10,10 +10,9 @@ namespace SpriteKind {
     export const gold = SpriteKind.create()
 }
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (开始 == 0) {
+    if (开始) {
         controller.moveSprite(ballcopy, 0, 0)
         ballcopy.setVelocity(30, -70)
-        开始 = 1
     }
 })
 function 初始化 () {
@@ -148,7 +147,6 @@ function 初始化 () {
     controller.moveSprite(mySprite, 100, 0)
     controller.moveSprite(ballcopy, 100, 0)
     blocks = [assets.image`Temporary asset1`, assets.image`Temporary asset2`, assets.image`Temporary asset3`, assets.image`myImage`, assets.image`Temporary asset4`]
-    开始 = 0
 }
 sprites.onOverlap(SpriteKind.ball, SpriteKind.Enemy, function (sprite, otherSprite) {
     game.over(false)
@@ -235,8 +233,13 @@ let sidehit = 0
 let blocks: Image[] = []
 let mySprite: Sprite = null
 let ballcopy: Sprite = null
-let 开始 = 0
+let 开始 = false
+开始 = false
+pause(500)
 scene.setBackgroundImage(assets.image`myImage0`)
+music.knock.play()
+pause(700)
+music.bigCrash.play()
 game.setDialogTextColor(9)
 game.setDialogCursor(assets.image`myImage1`)
 game.setDialogFrame(img`
@@ -258,14 +261,15 @@ game.setDialogFrame(img`
     `)
 game.showLongText("press A to start", DialogLayout.Bottom)
 初始化()
+开始 = true
 关卡()
 forever(function () {
-    if (blockNum == 0 && 开始 == 1) {
+    if (blockNum == 0 && 开始) {
         game.over(true)
     }
 })
 forever(function () {
-    if (开始 == 1) {
+    if (开始) {
         for (let index = 0; index < 3; index++) {
             music.playMelody("- - - F - - - C ", 500)
             music.playMelody("- - - F - - - C ", 500)
